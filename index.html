@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        #logo {
+            background-color: #fc5296;
+            background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+        }
+        #topRightBtn {
+            box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
+            -webkit-box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
+            -moz-box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
+        }
+    </style>
+
+</head>
+<body onload="myFunc()">
+    
+    <!-- Navbar -->
+    <nav class="relative container mx-auto">
+        <!-- flex container  -->
+        <div class="flex justify-between">
+            <div class="flex items-center justify-center">
+                <!-- logo  -->
+                <div id="logo" class="h-28 w-28 flex items-center justify-center text-white text-5xl">
+                    R
+                </div>
+                <!-- Menu items  -->
+                <div class="hidden space-x-6 md:flex pl-12 text-xl text-gray-800 font-semibold">
+                    <a href="#!" class="text-pink-500 hover:text-pink-500 px-2">Home</a>
+                    <a href="#!" class="hover:text-pink-500 px-2">Project</a>
+                    <a href="#!" class="hover:text-pink-500 px-2">Elements</a>
+                    <a href="#!" class="hover:text-pink-500 px-2">Blog</a>
+                    <a href="#!" class="hover:text-pink-500 px-2">Shop</a>
+                    <a href="#!" class="hover:text-pink-500 px-2">Contact</a>
+                </div>
+            </div>
+            <!-- Button  -->
+            <a href="#!" class="h-16 w-64 flex items-center justify-center text-pink-500 bg-gray-100 hover:bg-gray-200 font-semibold text-xl mt-4 mr-4" id="topRightBtn">
+                Buy Rogan
+                    <i class="pl-4 fa-solid fa-arrow-right-long"></i>
+            </a>
+    </nav>
+
+    <!-- Main Section  -->
+    <main>
+
+        <!-- Flex container  -->
+        <div class="container flex flex-col-reverse items-center px-16 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+
+            <!-- left item  -->
+            <div class="flex flex-col space-y-4 md:w-1/2">
+                <span class="bg-gray-100 w-56 py-2 text-center font-bold text-gray-700">
+                    <span class="text-red-400">70% Off</span> for first 3 months
+                </span>
+                <h1 class="max-w-md text-6xl text-gray-800 font-semibold text-center tracking-wide md:text-5xl md:text-left">
+                    Digital Agency with Excellence Services
+                </h1>
+                <p class="max-w-md text-center text-gray-500 font-semibold text-base pt-8 md:text-left">
+                    The 3 golden rules professional graphic designer don't
+                </p>
+            </div>
+            <!-- Image  -->
+            <div class="md:w-1/2 p-20">
+                <img src="./image.jpeg" alt="image not found">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="flex justify-around font-semibold text-2xl text-gray-800 py-4">
+        <span id="myName">[Student name]</span>
+        <span id="myRollno">[University Rollno]</span>
+        <span>GLA University, Mathura</span>
+        <span id="dateToday">[11-07-2022]</span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
